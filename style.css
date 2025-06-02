@@ -89,3 +89,88 @@ ul li {
 .button:hover {
     background: #cf401a;
 }
+
+/* Form Styling for Login and Sign Up Pages */
+
+#login-form .container,
+#signup-form .container {
+    max-width: 500px; /* More appropriate width for forms */
+    background: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#login-form h2,
+#signup-form h2 {
+    text-align: center;
+    color: #35424a;
+    margin-bottom: 25px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* So padding doesn't add to width */
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #e8491d;
+    outline: none;
+}
+
+form .button { /* Ensure form button takes full width and has some margin */
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+#login-form p,
+#signup-form p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95em;
+}
+
+#login-form p a,
+#signup-form p a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+#login-form p a:hover,
+#signup-form p a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure header on these pages is not too tall */
+body > header { /* Target header that is a direct child of body */
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body > header h1 {
+    font-size: 1.8em; /* Slightly smaller h1 in subpages */
+    text-align: left;
+}
